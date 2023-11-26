@@ -41,7 +41,7 @@ fun CustomDialog01(
     onDismiss: () -> Unit
 ) {
     if (show) {
-        Dialog(onDismissRequest = { onDismiss }) {
+        Dialog(onDismissRequest = { onDismiss() }) {
             Column(
                 Modifier
                     .background(Color.White)
